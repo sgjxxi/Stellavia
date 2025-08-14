@@ -1,12 +1,9 @@
 class HomeController < ApplicationController
     def index
-        @title='Stellavia'
-        render "home/index"
+        @article=Article.first
     end
 
     def about
-        @title='Stellavia'
         render "home/about"
     end
-    
 end
