@@ -2,15 +2,14 @@ class ArticlesController < ApplicationController
     before_action :set_article, only: [ :show, :edit, :update ]
 
     def index
-        raise StandardError
-        @articles=Article.all
+        @articles = Article.all
     end
 
     def show
     end
 
     def new
-        @article=Article.new
+        @article = Article.new
     end
 
     def create
@@ -19,7 +18,7 @@ class ArticlesController < ApplicationController
           redirect_to article_path(@article), notice: '保存できたよ'
         else
             flash.now[:error] = '保存に失敗しました'
-            render :new
+            render :new, status: :unprocessable_entity
         end
     end
 
