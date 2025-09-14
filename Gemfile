@@ -68,3 +68,5 @@ group :test do
 end
 
 gem 'importmap-rails', '~> 2.2'
+
+gem "ruby-lsp", "~> 0.26.1", group: :development

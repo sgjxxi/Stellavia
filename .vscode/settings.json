@@ -1,8 +1,18 @@
 {
-    "cSpell.words": [
-        "dropbtn",
-        "Stellavia",
-        "stylesheet",
-        "xtsu"
-    ]
+    "rubyLsp.enabledFeatures": {
+    "diagnostics": true,
+    "documentHighlights": true,
+    "documentSymbols": true,
+    "formatting": true,
+    "hover": true,
+    "inlayHint": true,
+    "completion": true,
+    "definition": true,
+    "typeHierarchy": true
+    },
+    "rubyLsp.rubyVersionManager": {
+        "type": "rbenv"
+    },
+    "rubocop.useBundler": true,
+    "rubyLsp.formatter": "rubocop"
 }
