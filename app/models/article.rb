@@ -23,6 +23,7 @@ class Article < ApplicationRecord
 
   validate :validate_title_and_content_length
 
+  has_many :comments
   belongs_to :user
 
   def validate_title_and_content_length

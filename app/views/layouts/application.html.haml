@@ -20,7 +20,8 @@
         - if !current_page?(root_path)
           = link_to :back do
             - image_tag'back.svg'
-        %p.header_pageTitle Blog
+        = link_to root_path do
+          %p.header_pageTitle Stellavia
       - if user_signed_in?
         .dropdown
           = image_tag 'default-avatar.png', class: 'header_avatar dropbtn'
